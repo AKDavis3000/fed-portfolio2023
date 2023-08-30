@@ -1,95 +1,58 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import './scss/styles.scss';
+import Link from 'next/link';
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaSass,
+  FaReact,
+  FaGithub,
+} from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main className="home_wrapper">
+      <p className="h_p1">Front End Developer</p>
+      <div className="home_line"></div>
+      <div className="shapes">
+        <div className="shape1"></div>
+        <div className="shape2"></div>
+        <div className="shape3"></div>
+        <div className="shape4"></div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <p className="h_p2">
+        Hi! My name is Akilah Davis. I am a front-end developer from Washington
+        D.C. About two years ago, I chose to explore web development and found a
+        passion for front-end development. I enjoy problem-solving and more
+        specifically, thinking of creative solutions. I appreciate the
+        meticulous work that is paramount to a functional web application. In
+        addition to front-end development, I enjoy sewing, reading, attending
+        concerts, art, museums, and more.
+        <br />
+      </p>
+      <p className="h_p3">My technical skills include the following:</p>
+      <div className="h_icons">
+        <FaHtml5 className="fa fa-html" />
+        <FaCss3 className="fa fa-css" />
+        <FaJs className="fa fa-js" />
+        <FaSass className="fa fa-sass" />
+        <FaReact className="fa fa-react" />
+        <FaGithub className="fa fa-github" />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <p className="h_p4">
+        Click
+        <Link
+          href="/Portfolio"
+          className="h_portfolio_link">
+          here
+        </Link>
+        to view my portfolio.
+      </p>
+      <div className="home_footer">
+        <div className="triangle"></div>
+        <div className="home_base"></div>
       </div>
     </main>
-  )
+  );
 }
