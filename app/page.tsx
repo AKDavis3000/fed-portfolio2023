@@ -14,13 +14,11 @@ export default function Home() {
   return (
     <>
       <main className="home_wrapper">
-        {/* grid item 1 */}
         <div className="h_grid-item1">
           <p className="h_p1">Front End Developer</p>
           <div className="hp1_line"></div>
         </div>
-        {/* grid item 2  */}
-        {/* grid item 3 */}
+
         <div className="h_grid-item2">
           <div className="vertical_line"></div>
         </div>
@@ -30,8 +28,17 @@ export default function Home() {
           <div className="shape2"></div>
           <div className="shape3"></div>
           <div className="shape4"></div>
+          <div className="my_img_wrapper">
+            <Image
+              src="/img/Me-1.png"
+              alt="Akilah Davis"
+              width={235}
+              height={270}
+              className="my_img"
+            />
+          </div>
         </div>
-        {/* grid item 4 */}
+
         <div className="h_grid-item4">
           <p className="h_about">About Me</p>
           <div className="about_line"></div>
@@ -47,12 +54,32 @@ export default function Home() {
           </p>
           <p className="h_p3">My technical skills include the following:</p>
           <div className="h_icons">
-            <FaHtml5 className="fa fa-html" />
-            <FaCss3 className="fa fa-css" />
-            <FaJs className="fa fa-js" />
-            <FaSass className="fa fa-sass" />
-            <FaReact className="fa fa-react" />
-            <FaGithub className="fa fa-github" />
+            <span>
+              {' '}
+              <FaHtml5 className="fa fa-html" /> HTML5
+            </span>
+            <span>
+              {' '}
+              <FaCss3 className="fa fa-css" />
+              CSS3
+            </span>
+            <span>
+              <FaJs className="fa fa-js" />
+              JavaScript
+            </span>
+            <br />
+            <span>
+              {' '}
+              <FaSass className="fa fa-sass" /> Sass
+            </span>
+            <span>
+              <FaReact className="fa fa-react" />
+              React
+            </span>
+            <span>
+              {' '}
+              <FaGithub className="fa fa-github" /> GitHub{' '}
+            </span>
           </div>
           <p className="h_p4">
             Click
@@ -62,6 +89,15 @@ export default function Home() {
               here
             </Link>
             to view my portfolio.
+          </p>
+          <p className="h_p5">
+            Click
+            <Link
+              href="/Contact"
+              className="h_contact_link">
+              here
+            </Link>
+            to view contact me.
           </p>
         </div>
       </main>

@@ -1,6 +1,8 @@
-import React from 'react';
+'use client';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   return (
@@ -41,38 +43,40 @@ export default function Contact() {
         </div>
         <div className="c_grid-item4">
           <form
-            action=""
+            method="POST"
+            action="https://formsubmit.co/akilahkdavis@gmail.com"
             className="cgi4_form">
-            <label
-              htmlFor=""
-              className="cgi4_label">
-              Email
-            </label>
+            <label className="cgi4_label">Name</label>
+
             <input
               type="text"
+              name="user_name"
+              placeholder="Name"
+              className="cgi4_input"
+            />
+
+            <label className="cgi4_label">Email</label>
+
+            <input
+              type="email"
+              name="user_email"
               placeholder="Email"
               className="cgi4_input"
             />
-            <label
-              htmlFor=""
-              className="cgi4_label">
-              Subject
-            </label>
-            <input
-              type="text"
-              placeholder="Subject"
-              className="cgi4_input"
-            />
+
             <textarea
               className="cgi4_input textarea"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
+              name="message"
+              cols={30}
+              rows={10}
               placeholder="Message..."></textarea>
-            <button className="cgi4_btn">Submit</button>
+
+            <input
+              type="submit"
+              value="Send"
+              className="cgi4_btn"
+            />
           </form>
-          <p className="thanks">Thank You!</p>
         </div>
       </section>
       <div className="home_footer">
