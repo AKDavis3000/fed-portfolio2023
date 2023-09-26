@@ -76,6 +76,11 @@ export default function Contact() {
               value="Send"
               className="cgi4_btn"
             />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://portfolio2023-six-sand.vercel.app/ThankYou"
+            />
           </form>
         </div>
       </section>
