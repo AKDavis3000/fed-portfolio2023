@@ -20,7 +20,7 @@ export default function Portfolio() {
             <Image
               src="/img/rm.png"
               alt="cat"
-              width={300}
+              width={200}
               height={200}
               className="portfolio_pics"
             />
