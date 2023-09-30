@@ -27,7 +27,7 @@ export default function Portfolio() {
             <div className="p_wrapper">
               <p className="pgi2_p1">
                 <Link
-                  href="rm-git-final-akdavis3000.vercel.app
+                  href="https://rm-phi.vercel.app/
                   "
                   className="portfolio_link">
                   Rick & Morty
@@ -59,7 +59,7 @@ export default function Portfolio() {
               <p className="pgi3_p1">
                 <Link
                   className="portfolio_link"
-                  href="ted-app-rho.vercel.app">
+                  href="https://ted-app-rho.vercel.app/">
                   Teduhan
                 </Link>
               </p>
@@ -94,7 +94,7 @@ export default function Portfolio() {
             <div className="p_wrapper">
               <p className="pgi4_p1">
                 <Link
-                  href="turnedtable.vercel.app"
+                  href="https://turnedtable.vercel.app/"
                   className="portfolio_link">
                   Turned Table
                 </Link>
