@@ -44,7 +44,7 @@ export default function Contact() {
         <div className="c_grid-item4">
           <form
             method="POST"
-            action="https://formsubmit.co/akilahkdavis@gmail.com"
+            action="ab9114eb741471e6584fa08474204dcb"
             className="cgi4_form">
             <label className="cgi4_label">Name</label>
 
