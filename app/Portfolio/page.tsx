@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Project from '../Components/Project';
 
 export default function Portfolio() {
   return (
@@ -16,135 +17,55 @@ export default function Portfolio() {
         </div>
         {/* two */}
         <div className="p_grid">
-          <div className="p_grid-items p_grid-item2">
-            <Image
-              src="/img/rm.png"
-              alt="cat"
-              width={200}
-              height={200}
-              className="portfolio_pics"
-            />
-            <div className="p_wrapper">
-              <p className="pgi2_p1">
-                <Link
-                  href="https://rm-phi.vercel.app/
-                  "
-                  className="portfolio_link">
-                  Rick & Morty
-                </Link>
-              </p>
-              <p className="pgi2_p2">
-                I used the Rick & Morty API to create character cards that
+          <Project
+            src="/img/rm.png"
+            alt="rick and morty website"
+            siteHref="https://rm-phi.vercel.app/"
+            siteName="Rick and Morty"
+            siteDesc="I used the Rick & Morty API to create character cards that
                 display some information about each character. I also added a
                 picture for each character. For this app I used Next.js, React,
-                and Sass.
-              </p>
-              <Link
-                className="portfolio_link"
-                href="https://github.com/AKDavis3000/rm-project.git">
-                GitHub Files
-              </Link>
-            </div>
-          </div>
+                and Sass."
+            gitHref="https://github.com/AKDavis3000/rm-project.git"
+          />
+
           {/* three */}
-          <div className="p_grid-items p_grid-item3">
-            <Image
-              src="/img/ted.png"
-              alt="cat"
-              width={300}
-              height={200}
-              className="portfolio_pics"
-            />
-            <div className="p_wrapper">
-              <p className="pgi3_p1">
-                <Link
-                  className="portfolio_link"
-                  href="https://ted-app-rho.vercel.app/">
-                  Teduhan
-                </Link>
-              </p>
-              <p className="pgi3_p2">
-                I utilized Next.js, React, and Sass to create this real estate
-                website. The design came from Firman Jabbar and I was given
-                permission to code it. I will provide the link to both my github
-                account and the link to Firman&apos;s account on dribbble.com.
-              </p>
-              <Link
-                className="portfolio_link"
-                href="https://github.com/AKDavis3000/ted-app.git">
-                GitHub files
-              </Link>
-              <br />
-              <Link
-                className="portfolio_link"
-                href="https://dribbble.com/shots/19414991-teduhan-Property-Sale-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=firmanjabbar&utm_content=teduhan%20%E2%80%93%20Property%20Sale%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=firmanjabbar&utm_content=teduhan%20%E2%80%93%20Property%20Sale%20Landing%20Page&utm_medium=Social_Share">
-                Firman Jabbar&apos;s account
-              </Link>
-            </div>
-          </div>
+          <Project
+            src="/img/ted.png"
+            alt="teduhan app"
+            siteHref="https://ted-app-rho.vercel.app/"
+            siteName="Teduhan"
+            siteDesc=" I utilized Next.js, React, and Sass to create this real estate
+            website. The design came from Firman Jabbar and I was given
+            permission to code it. I will provide the link to both my github
+            account and the link to Firman's account on dribbble.com."
+            gitHref="https://github.com/AKDavis3000/ted-app.git"
+          />
+
           {/* four */}
-          <div className="p_grid-items p_grid-item4">
-            <Image
-              src="/img/tt.png"
-              alt="cat"
-              width={300}
-              height={200}
-              className="portfolio_pics"
-            />
-            <div className="p_wrapper">
-              <p className="pgi4_p1">
-                <Link
-                  href="https://turnedtable.vercel.app/"
-                  className="portfolio_link">
-                  Turned Table
-                </Link>
-              </p>
-              <p className="pgi4_p2">
-                I created a landing page for a furniture website. For this site
-                I also used Next.js, React, and Sass.
-              </p>
-              <Link
-                className="portfolio_link"
-                href="https://github.com/AKDavis3000/company-app.git">
-                GitHub files
-              </Link>
-            </div>
-          </div>
+          <Project
+            src="/img/tt.png"
+            alt="turned table website"
+            siteHref="https://turnedtable.vercel.app/"
+            siteName="Turned Table"
+            siteDesc="I created a landing page for a furniture website. For this site
+            I also used Next.js, React, and Sass."
+            gitHref="https://github.com/AKDavis3000/company-app.git"
+          />
+
           {/* five */}
-          <div className="p_grid-items p_grid-item5">
-            <Image
-              src="/img/scramble.png"
-              alt="cat"
-              width={300}
-              height={200}
-              className="portfolio_pics"
-            />
-            <div className="p_wrapper">
-              <p className="pgi5_p1">
-                <Link
-                  className="portfolio_link"
-                  href="">
-                  Word Scramble
-                </Link>
-              </p>
-              <p className="pgi5_p2">
-                This game is just like Anagrams on iMessage Games. It&apos;s my
-                favorite game which is why I decided to make a clone. For this I
-                used Next.js, React, and Sass. You have to find as many words as
-                you can in 1 minute.
-                <span className="underline">
-                  {' '}
-                  This game is currently under construction but feel free to
-                  view the code on my github which is linked below.
-                </span>
-              </p>
-              <Link
-                className="portfolio_link"
-                href="https://github.com/AKDavis3000/word-scramble.git">
-                Github files
-              </Link>
-            </div>
-          </div>
+          <Project
+            src="/img/scramble.png"
+            alt="word scramble"
+            siteHref=""
+            siteName="Word Scramble"
+            siteDesc="This game is similar to Anagrams on iMessage Games. You have to find as many words as
+            you can in 1 minute. It's my
+            favorite game which is why I decided to make a clone. For this I
+            used Next.js, React, and Sass. This game is currently under construction but feel free to
+                view the code on my github which is linked below."
+            gitHref="https://github.com/AKDavis3000/word-scramble.git"
+          />
         </div>
         {/* six */}
         <div className="p_grid-items p_grid-item6">

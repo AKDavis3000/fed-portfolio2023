@@ -9,6 +9,7 @@ import {
   FaReact,
   FaGithub,
 } from 'react-icons/fa';
+import TechnicalSkills from './Components/TechnicalSkills';
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
           <div className="about_line"></div>
           <p className="h_p2">
             Hi! My name is Akilah Davis. I am a front-end developer from
-            Washington D.C. About two years ago, I chose to explore web
+            Washington D.C. About three years ago, I chose to explore web
             development and found a passion for front-end development. I enjoy
             problem-solving and more specifically, thinking of creative
             solutions. I appreciate the meticulous work that is paramount to a
@@ -52,34 +53,36 @@ export default function Home() {
             enjoy sewing, reading, attending concerts, art, museums, and more.
             <br />
           </p>
-          <p className="h_p3">My technical skills include the following:</p>
+          <p className="h_p3">
+            I have an AWS Cloud Practitioner certification. In addition, my
+            technical skills include the following:
+          </p>
+
           <div className="h_icons">
-            <span>
-              {' '}
-              <FaHtml5 className="fa fa-html" /> HTML5
-            </span>
-            <span>
-              {' '}
-              <FaCss3 className="fa fa-css" />
-              CSS3
-            </span>
-            <span>
-              <FaJs className="fa fa-js" />
-              JavaScript
-            </span>
-            <br />
-            <span>
-              {' '}
-              <FaSass className="fa fa-sass" /> Sass
-            </span>
-            <span>
-              <FaReact className="fa fa-react" />
-              React
-            </span>
-            <span>
-              {' '}
-              <FaGithub className="fa fa-github" /> GitHub{' '}
-            </span>
+            <TechnicalSkills
+              icon={<FaHtml5 className="fa fa-html" />}
+              text="HTML5"
+            />
+            <TechnicalSkills
+              icon={<FaCss3 className="fa fa-css" />}
+              text="CSS3"
+            />
+            <TechnicalSkills
+              icon={<FaJs className="fa fa-js" />}
+              text="JavaScript"
+            />
+            <TechnicalSkills
+              icon={<FaSass className="fa fa-sass" />}
+              text="Sass"
+            />
+            <TechnicalSkills
+              icon={<FaReact className="fa fa-react" />}
+              text="React"
+            />
+            <TechnicalSkills
+              icon={<FaGithub className="fa fa-github" />}
+              text="FaGithub"
+            />
           </div>
           <p className="h_p4">
             Click
