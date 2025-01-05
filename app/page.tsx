@@ -46,16 +46,15 @@ export default function Home() {
           <p className="h_p2">
             Hi! My name is Akilah Davis. I am a front-end developer from
             Washington D.C. About three years ago, I chose to explore web
-            development and found a passion for front-end development. I enjoy
-            problem-solving and more specifically, thinking of creative
-            solutions. I appreciate the meticulous work that is paramount to a
-            functional web application. In addition to front-end development, I
-            enjoy sewing, reading, attending concerts, art, museums, and more.
+            development and found a passion for front-end development. I
+            appreciate the meticulous work that is paramount to a functional web
+            application. In addition to front-end development, I enjoy sewing,
+            reading, attending concerts, art, museums, and more.
             <br />
           </p>
           <p className="h_p3">
-            I have an AWS Cloud Practitioner certification. In addition, my
-            technical skills include the following:
+            In addition to an AWS Cloud Practitioner certification, my technical
+            skills include the following:
           </p>
 
           <div className="h_icons">
@@ -91,7 +90,7 @@ export default function Home() {
               className="h_portfolio_link">
               here
             </Link>
-            to view my portfolio.
+            to view my projects.
           </p>
           <p className="h_p5">
             Click

@@ -34,7 +34,7 @@ export default function NavBar() {
             <Link
               className="nav_links"
               href="/Portfolio">
-              Portfolio
+              Projects
             </Link>
           </li>
           <li>

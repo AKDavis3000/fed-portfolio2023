@@ -24,8 +24,7 @@ export default function Portfolio() {
             siteName="Rick and Morty"
             siteDesc="I used the Rick & Morty API to create character cards that
                 display some information about each character. I also added a
-                picture for each character. For this app I used Next.js, React,
-                and Sass."
+                picture for each character. "
             gitHref="https://github.com/AKDavis3000/rm-project.git"
           />
 
@@ -36,9 +35,7 @@ export default function Portfolio() {
             siteHref="https://ted-app-rho.vercel.app/"
             siteName="Teduhan"
             siteDesc=" I utilized Next.js, React, and Sass to create this real estate
-            website. The design came from Firman Jabbar and I was given
-            permission to code it. I will provide the link to both my github
-            account and the link to Firman's account on dribbble.com."
+            website."
             gitHref="https://github.com/AKDavis3000/ted-app.git"
           />
 
@@ -57,13 +54,10 @@ export default function Portfolio() {
           <Project
             src="/img/scramble.png"
             alt="word scramble"
-            siteHref=""
+            siteHref="https://word-scramble-eight.vercel.app/"
             siteName="Word Scramble"
             siteDesc="This game is similar to Anagrams on iMessage Games. You have to find as many words as
-            you can in 1 minute. It's my
-            favorite game which is why I decided to make a clone. For this I
-            used Next.js, React, and Sass. This game is currently under construction but feel free to
-                view the code on my github which is linked below."
+            you can in 1 minute. I am constantly working on improving this game as there are several errors."
             gitHref="https://github.com/AKDavis3000/word-scramble.git"
           />
         </div>
